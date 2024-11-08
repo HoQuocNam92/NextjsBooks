@@ -10,7 +10,56 @@ import book05 from '../images/book-05.jpg';
 import book06 from '../images/book-06.jpg';
 export default function Page() {
   const product = [
-    book01, book02, book03, book04, book05, book06
+    {
+      id: 1,
+      img: book01,
+      name: 'Tâm lý học về tiền',
+      title: 'Nghiên cứu cách mà tâm lý, cảm xúc và hành vi của con người ảnh hưởng đến cách họ kiếm, chi tiêu, tiết kiệm',
+      price: "99.999 VND"
+
+    },
+    {
+      id: 2,
+      img: book02,
+      name: 'Thấu hiểu tiếp thị',
+
+      title: 'Một yếu tố quan trọng trong việc xây dựng và phát triển thương hiệu.Đây là quá trình tìm hiểu sâu sắc về thị trường.',
+      price: "129.999 VND"
+
+    },
+    {
+      id: 3,
+      img: book03,
+      name: 'Từ tốt đến vĩ đại',
+      title: 'Cuốn sách nổi tiếng của Jim Collins, khám phá lý do tại sao một số công  ty thành công vượt bậc  ',
+      price: "89.999 VND"
+
+    },
+    {
+      id: 4,
+      img: book04,
+      name: 'Nếu biết trăm năm là hữu hạn',
+      title: 'Mở đầu cho một suy tư sâu sắc về <br /> thời gian và cuộc sống. Đoạn thơ  thường gợi ý đến những cảm xúc .',
+      price: "49.999 VND"
+
+    },
+    {
+      id: 5,
+      img: book05,
+      name: 'Nghĩ giàu làm giàu',
+      title: 'Một cuốn sách nổi tiếng của tác giả Napoleon Hill, xuất bản lần đầu   vào năm 1937.',
+      price: "79.999 VND"
+
+    },
+    {
+      id: 6,
+      img: book06,
+      name: '7 thói quen để thành đạt',
+      title: 'Cuốn sách nổi tiếng của Stephen R. Covey, cung cấp các nguyên tắc cơ  bản để phát triển cá nhân.',
+      price: "199.999 VND"
+
+    }
+
   ]
   return (
     <>
@@ -38,11 +87,14 @@ export default function Page() {
         </div>
         <div className='grid grid-cols-3 w-[1250px] h-[1200px] mx-auto gap-[115px] mt-[100px] mb-[50px]'>
           {product.map((items, index) => (
-            <div className='w-[340px] h-[538px] p-[15px] bg-gray-200'>
-              <Image key={index} className='w-[200px] h-[300px] mx-auto mt-[20px]' src={items} alt="" />
-              <h4 className='font-bold text-[18px] my-[10px] ml-[20px]'>Tâm lý học về tiền</h4>
-              <h4 className='ml-[20px]'>Nghiên cứu cách mà tâm lý, cảm xúc và hành vi của con người ảnh hưởng đến cách họ kiếm, chi tiêu, tiết kiệm</h4>
-              <button className='bg-black text-white p-[10px] rounded-l mx-[105px] mt-[10px] hover:bg-white hover:text-black'>Mua ngay </button>
+            <div className='w-[340px] h-[558px] p-[15px] bg-gray-200'>
+              <Image className='w-[200px] h-[300px] mx-auto mt-[20px]' src={items.img} alt="" />
+              <h4 className='font-bold text-[18px] my-[10px] ml-[20px]'>{items.name}</h4>
+              <h4 className='ml-[20px]'>{items.title}</h4>
+
+              <div className='ml-[60px] text-[20px] font-bold mt-2'>Giá : {items.price}</div>
+              <button className='bg-black text-white p-[10px] mx-[100px] mt-2 rounded-lg hover:bg-white hover:text-black'><a href="cart">Mua ngay</a> </button>
+
             </div>
           ))}
 
