@@ -25,8 +25,8 @@ export default function Page() {
             </div>
             <div className='flex justify-center'>
               <a className="mx-4 text-3xl" href="#" aria-label="Search"><FontAwesomeIcon icon={faMagnifyingGlass} /></a>
-              <a className="mx-4 text-3xl" href="#"><i><FontAwesomeIcon icon={faCartShopping} /></i></a>
-              <a className="mx-4 text-3xl" href="#"><i><FontAwesomeIcon icon={faUser} /></i></a>
+              <a className="mx-4 text-3xl" href="cart"><i><FontAwesomeIcon icon={faCartShopping} /></i></a>
+              <a className="mx-4 text-3xl" href="SignUp"><i><FontAwesomeIcon icon={faUser} /></i></a>
             </div>
           </div>
         </div>
