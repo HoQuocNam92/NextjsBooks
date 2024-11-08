@@ -17,16 +17,16 @@ export default function Page() {
             <div>
               <h1 className="text-4xl font-bold">SHOPPING</h1>
             </div>
-            <div className="">
+            <div>
               <a className="mx-4" href="#">Home</a>
               <a className="mx-4" href="#">Products</a>
               <a className="mx-4" href="#">Services</a>
               <a className="mx-4" href="#">Pricing</a>
             </div>
-            <div className="flex items-center justify-end" >
-              <a className="mx-4 text-3xl" href=""><i><FontAwesomeIcon icon={faMagnifyingGlass} /></i></a>
-              <a className="mx-4 text-3xl" href=""><i><FontAwesomeIcon icon={faCartShopping} /></i></a>
-              <a className="mx-4 text-3xl" href=""><i><FontAwesomeIcon icon={faUser} /></i></a>
+            <div className='flex justify-center'>
+              <a className="mx-4 text-3xl" href="#" aria-label="Search"><FontAwesomeIcon icon={faMagnifyingGlass} /></a>
+              <a className="mx-4 text-3xl" href="#"><i><FontAwesomeIcon icon={faCartShopping} /></i></a>
+              <a className="mx-4 text-3xl" href="#"><i><FontAwesomeIcon icon={faUser} /></i></a>
             </div>
           </div>
         </div>
